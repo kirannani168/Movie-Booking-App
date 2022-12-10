@@ -1,0 +1,15 @@
+#MainHeader{
+    background-color: #222;
+    height: 36px;
+    padding: 8px 32px 8px 16px;
+}
+#MainHeader img{
+    background-color: #ff7f7f;
+    height: 35px;
+}
+#MainHeader img {
+    -webkit-transform: rotate(360deg);
+    -webkit-transition-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
