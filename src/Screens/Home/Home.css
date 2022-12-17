@@ -16,7 +16,6 @@
     width: 24%;
     margin: 45px;
     padding: 16px;
-    box-shadow: 2px 2px 2px 2px rgb(47, 44, 44, .3);
 }
 .movieCardRelased{
     display: flex;

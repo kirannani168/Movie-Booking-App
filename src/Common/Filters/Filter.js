@@ -2,15 +2,21 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
+import artists from '../../Assets/Artists';
+import genres from '../../Assets/Genres';
+import { Button } from '@mui/material';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
 
 function Filter() {
-    const generies = [
-
-    ]
     return (
-        <div style={{textAlign: 'center'}}>
-        <h3 style={{color: 'skyblue'}}>Filter Movies by</h3>
-            <Box
+        <div style={{ textAlign: 'center' }}>
+            
+
+            <Card sx={{ minWidth: 275 }}>
+                <CardContent>
+                <h3 style={{ color: 'skyblue' }}>FIND MOVIES BY: </h3>
+                <Box
                 component="form"
                 sx={{
                     '& .MuiTextField-root': { m: 1, width: '25ch' },
@@ -28,16 +34,16 @@ function Filter() {
                     />
                 </div>
                 <div>
-                    <TextField style={{width:'100%'}}
-                        id="standard-select-currency"
+                <TextField style={{width:'100%'}}
+                        id="Genres"
                         select
-                        label="Genres"
-                        defaultValue="EUR"
+                        label=" Genres"
+                        defaultValue="Genres"
                         variant="standard"
                     >
-                        {generies.map((option) => (
-                            <MenuItem key={option.value} value={option.value}>
-                                {option.label}
+                        {genres.map((option) => (
+                            <MenuItem key={option.id} value={option.name}>
+                                {option.name}
                             </MenuItem>
                         ))}
                     </TextField>
@@ -50,9 +56,9 @@ function Filter() {
                         defaultValue="Artist"
                         variant="standard"
                     >
-                        {generies.map((option) => (
-                            <MenuItem key={option.value} value={option.value}>
-                                {option.label}
+                        {artists.map((option) => (
+                            <MenuItem key={option.id} value={option.first_name}>
+                                {option.first_name}
                             </MenuItem>
                         ))}
                     </TextField>
@@ -68,7 +74,9 @@ function Filter() {
                     </TextField>
                 </div>
             </Box>
-            <button type='submit'>Submit</button>
+            <Button variant="contained">Apply</Button>
+                </CardContent>
+            </Card>
         </div>
     )
 }
