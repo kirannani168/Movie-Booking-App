@@ -8,8 +8,8 @@
     height: 35px;
 }
 #MainHeader img {
-    -webkit-transform: rotate(360deg);
-    -webkit-transition-duration: 1s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
+    transform: rotate(360deg);
+    transition-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }

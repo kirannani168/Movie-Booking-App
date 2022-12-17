@@ -1,0 +1,24 @@
+.subHeading{
+    background-color: #ff9999;
+    padding: 8px;
+    text-align: center;
+    font-size: 1rem;
+    width: 98.9%;
+}
+.flex-container{
+    display: flex;
+}
+.releasedMovies{
+    width: 76%;
+    margin: 16px;
+}
+.filters{
+    width: 24%;
+    margin: 45px;
+    padding: 16px;
+    box-shadow: 2px 2px 2px 2px rgb(47, 44, 44, .3);
+}
+.movieCardRelased{
+    display: flex;
+    justify-content: space-around;
+}
